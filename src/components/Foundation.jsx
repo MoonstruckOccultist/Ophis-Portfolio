@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AboutMe from './pages/AboutMe'
 import Navigation from './Navigation';
+import Portfolio from './pages/Portfolio';
 
 export default function Foundation() {
     const [page, setPage] = useState('AboutMe')
@@ -10,9 +11,9 @@ export default function Foundation() {
             case 'AboutMe':
                 return <AboutMe />;
                 break;
-            // case 'Portfolio':
-            //     // return < />;
-            //     break;
+            case 'Portfolio':
+                return <Portfolio />;
+                break;
             // case 'Contact':
             //     // return < />;
             //     break;

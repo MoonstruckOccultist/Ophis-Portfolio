@@ -1,8 +1,26 @@
-#root {
-  /* padding: 0%; */
-  margin: 0%;
+:root {
+  background-color: hotpink;
 }
 
+#root {
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+
+.cusCard {
+  padding: 0%;
+}
+
+.githubMark {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  min-height: 100%;
+  background-color: hotpink;
+}
 
 /* DEFAULT JSX STUFF THAT WAS MESSING WITH ME */
 /* :root {
