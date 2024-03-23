@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import AboutMe from './pages/AboutMe'
+import AboutMePage from '../pages/AboutMePage'
 import Navigation from './Navigation';
-import Portfolio from './pages/Portfolio';
+import Portfolio from '../pages/Portfolio';
 
 export default function Foundation() {
-    const [page, setPage] = useState('AboutMe')
+    const [page, setPage] = useState('AboutMePage')
 
     const switchPage = () => {
         switch (page) {
-            case 'AboutMe':
-                return <AboutMe />;
+            case 'AboutMePage':
+                return <AboutMePage />;
                 break;
             case 'Portfolio':
                 return <Portfolio />;
@@ -22,7 +22,7 @@ export default function Foundation() {
             //     break;
 
             default:
-                return <AboutMe />;
+                return <AboutMePage />;
                 break;
         }
     };

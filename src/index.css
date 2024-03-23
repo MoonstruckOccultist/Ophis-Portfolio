@@ -5,8 +5,12 @@
 #root {
   padding: 0% !important;
   margin: 0% !important;
+  max-width: 100%;
 }
 
+.portUl{
+  padding: 1rem;
+}
 
 .cusCard {
   padding: 0%;
