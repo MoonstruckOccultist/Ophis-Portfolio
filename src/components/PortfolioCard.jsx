@@ -1,3 +1,5 @@
+import GithubMark from '../assets/images/github-mark.svg'
+
 export default function PortfolioCard ({ imageSrc, altText, websiteLink, githubLink, languages }) {
     return (
         <li className="card cusCard">

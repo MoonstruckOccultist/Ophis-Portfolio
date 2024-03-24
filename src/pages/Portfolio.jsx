@@ -1,5 +1,5 @@
 import CodingQuiz from '../assets/images/CodingQuiz.png'
-import GithubMark from '../assets/images/github-mark.svg'
+
 import PortfolioCard from '../components/PortfolioCard';
 
 const portfolioItems = [
@@ -19,7 +19,7 @@ export default function Portfolio() {
             <h1>Portdolio</h1>
             <ul className='portUl'>
             {portfolioItems.map(item => (
-                    <PortfolioItem
+                    <PortfolioCard
                         key={item.id}
                         imageSrc={item.imageSrc}
                         altText={item.altText}
