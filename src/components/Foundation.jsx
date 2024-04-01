@@ -3,6 +3,7 @@ import AboutMePage from '../pages/AboutMePage'
 import Navigation from './Navigation';
 import Portfolio from '../pages/Portfolio';
 import Contact from './Forms/Contact';
+import Footer from './Footer';
 
 export default function Foundation() {
     const [page, setPage] = useState('AboutMePage')
@@ -31,9 +32,10 @@ export default function Foundation() {
     const pageChangeHandler = (p) => setPage(p)
 
     return (
-        <div>
+        <div className='bod'>
             <Navigation page={page} pageChangeHandler={pageChangeHandler} />
-            <main>{switchPage()}</main>
+            <main className='main-content'>{switchPage()}</main>
+            
         </div>
     )
 }

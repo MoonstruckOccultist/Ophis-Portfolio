@@ -1,10 +1,14 @@
 import './App.css';
 import Foundation from './components/Foundation';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='bod'>
+    <div>
       <Foundation />
+      <footer>
+                <Footer/>
+            </footer>
     </div>
   )
 }
