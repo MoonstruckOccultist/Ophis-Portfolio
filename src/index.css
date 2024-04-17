@@ -14,15 +14,59 @@
 
 .portUl {
   padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .cusCard {
-  padding: 0%;
+  padding: 0% !important;
+  display: flex;
+  /* margin: 0.6rem; */
+  border: 0px solid black !important;
+  /* padding: 0.1%; */
+  background-color: #000000;
+}
+
+.cusCImg {
+  height: 100%;
+  width: 100%;
+  border: 5px solid black !important;
+}
+
+.cusCOver {
+  background: #6e6e6e82;
+  color: white;
+  display: flex;
+  align-items: end;
+  padding: 0% !important;
+  border-radius: 7px;
+}
+
+.cusCOver:hover {
+  background: none;
+}
+
+.cusBar{ 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #000000;
+  padding:0.5rem;
+  border-radius: 0% 0% 4px 4px;
+}
+
+.portLang {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
 
 .githubMark {
   width: 30px;
   height: 30px;
+}
+
+.CCLink {
+  background-color: #000000;
 }
 
 body {
@@ -48,6 +92,7 @@ body {
   flex: 1;
   overflow-y: auto;
   min-height: calc(100vh - 142px);
+  background-color: #ff3895;
 }
 
 .footer {
