@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import Portfolio from '../pages/Portfolio';
 import Contact from './Forms/Contact';
 import Footer from './Footer';
+import Resume from '../pages/Resume';
 
 export default function Foundation() {
     const [page, setPage] = useState('AboutMePage')
@@ -19,9 +20,9 @@ export default function Foundation() {
             case 'Contact':
                 return <Contact />;
                 break;
-            // case 'Resume':
-            //     // return < />;
-            //     break;
+            case 'Resume':
+                return <Resume />;
+                break;
 
             default:
                 return <AboutMePage />;

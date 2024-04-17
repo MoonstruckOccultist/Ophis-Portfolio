@@ -30,7 +30,7 @@ function Contact() {
             return;
         }
 
-        alert(`Message has been sent`);
+        alert(`Message has been sent \nEmail: ${email} \nName: ${name}\nMessage ${message}`);
 
         setName('');
         setMessage('');
@@ -38,14 +38,16 @@ function Contact() {
     };
 
     return (
-        <div className="container text-center">
-            {/* <form className="form" onSubmit={handleFormSubmit}>
+        <div className="container text-center formCont">
+            <form className="form cusForm" onSubmit={handleFormSubmit}>
+                <h3 className='formTitle'>Contact Form</h3>
                 <input
                     value={email}
                     name="email"
                     onChange={handleInputChange}
                     type="email"
                     placeholder="email"
+                    // className='inpF'
                 />
                 <input
                     value={name}
@@ -53,6 +55,7 @@ function Contact() {
                     onChange={handleInputChange}
                     type="text"
                     placeholder="Name"
+                    className='inpF'
                 />
                 <input
                     value={message}
@@ -60,15 +63,16 @@ function Contact() {
                     onChange={handleInputChange}
                     type="message"
                     placeholder="Message"
+                    className='inpF'
                 />
-                <button type="submit">Submit</button>
+                <button className='inpBtn' type="submit">Submit</button>
             </form>
             {errorMessage && (
                 <div>
                     <p className="error-text">{errorMessage}</p>
                 </div>
-            )} */}
-            <h1>COMING SOON</h1>
+            )}
+            {/* <h1>COMING SOON</h1> */}
         </div>
     );
 }

@@ -1,6 +1,6 @@
 export default function Navigation({ page, pageChangeHandler }) {
     return (
-        <ul className="nav nav-tabs">
+        <ul className="nav nav-tabs cusNav">
             <li className="nav-item">
                 <a href="#AboutMePage"
                     onClick={() => pageChangeHandler('AboutMePage')}
@@ -26,7 +26,7 @@ export default function Navigation({ page, pageChangeHandler }) {
                 </a>
             </li>
             <li className="nav-item">
-                <a href="Resume"
+                <a href="#Resume"
                     onClick={() => pageChangeHandler('Resume')}
                     className={page === 'Resume' ? 'nav-link active' : 'nav-link'}
                 >

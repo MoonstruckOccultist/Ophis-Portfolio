@@ -11,6 +11,14 @@
   display: inline;
 }
 
+.cusNav {
+  background: #000000;
+  color: white;
+}
+
+.cusnav a{
+  color: white;
+}
 
 .portUl {
   padding: 1rem;
@@ -28,7 +36,7 @@
 }
 
 .cusCImg {
-  height: 100%;
+  /* height: */
   width: 100%;
   border: 5px solid black !important;
 }
@@ -100,6 +108,31 @@ body {
   width: 100%;
   background-color: black;
   color: var(--light2);
+}
+
+.formTitle {
+  color: white;
+  margin-top: -0.7rem;
+}
+
+.cusForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formCont {
+  margin-top: 1.5rem;
+  background: #000000;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.inpF{
+  margin-top: 1rem;
+}
+
+.inpBtn {
+  margin-top: 1rem;
 }
 
 /* DEFAULT JSX STUFF THAT WAS MESSING WITH ME */
